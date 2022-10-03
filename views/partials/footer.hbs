@@ -1,0 +1,68 @@
+<footer>
+  <div class="footer__container">
+    <div class="copyright__info">
+      <span class="footer__logo__text">Raji Records</span>
+      <span class="footer__text">@rajirecords 2021-2022</span>
+    </div>
+
+    <table class="navbar__footer">
+      <tr>
+        <td class="footer__item" onclick="homeBtnHandler();"  id="HomeBtn"><a href="#">Home</a></td>
+        <td class="footer__item"><a href="#">COLLAB</a></td>
+        <td class="footer__item">
+          <a
+            data-fancybox
+            data-type="iframe"
+            href="/terms"
+            data-width="1200"
+            data-height="700">
+            Terms of use
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="footer__item"><a href="#">BEATS</a></td>
+        <td class="footer__item"></td>
+        <td class="footer__item">
+          <a
+            data-fancybox
+            data-type="iframe"
+            href="/privacy"
+            data-width="1200"
+            data-height="700">
+            Privacy policy
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="footer__item"><a href="#">CONTACT</a></td>
+        <td class="footer__item"></td>
+        <td class="footer__item">
+          <a
+            data-fancybox
+            data-type="iframe"
+            href="/licensInfo"
+            data-width="1200"
+            data-height="700">
+            Licensing Info
+          </a>
+        </td>
+      </tr>
+    </table>
+
+    <ul class="navbar__social">
+      <li class="social__links"><a href="https://soundcloud.com/raji-records"><i class="fa-brands fa-soundcloud social"></i></a></li>
+      <li class="social__links"><a href="https://www.youtube.com/channel/UCzGDvDXaQRY4rM-Y4gzG_yQ"><i class="fa-brands fa-youtube social"></i></a></li>
+      <li class="social__links"><a href=""><i class="fa-brands fa-instagram social"></i></a></li>
+    </ul>
+  </div>
+  <div class="footer__load__info">
+    <div class="load__info__container"  id="load-info-container" onclick="LoadInfoServer()">
+      <div class="load__info__content" id="load-info-content">
+        <div class="load__info__client" id="load-info-client"></div>
+        <div class="load__info__server" id="load-info-server">{{dataTime}}</div>
+      </div>
+    </div>
+  </div>
+
+</footer>

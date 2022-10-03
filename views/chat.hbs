@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+{{>head}}
+
+<body class="chatBody">
+    <div class="chat">
+        <div class="chat__registration" id="chat__registration">
+            <input class="registration__name" id="chatName" placeholder="What's your name?"></input>
+            <button class="submit__chat__registration" id="chatRegBtn">Send</button>
+        </div>
+        <div class="chat__container" id="chat__container">
+            <a href="/index" class="homeBtn" id="homeBtnChat"><i
+                    class="fa-solid fa-arrow-right-from-bracket homeBtnChat"></i></a>
+
+            <div class="message__container" id="message__container">
+                <div class="message__user__name" id="messageUserName"></div>
+                <div class="message__user__text" id="messageUserText"></div>
+            </div>
+            <div class="typingDisplay" id="typingDisplay"></div>
+            <div class="message__send__container">
+                <input class="messageInput" id="messageInput" placeholder="write a message"></input>
+                <button class="sendMessageBtn" id="sendMessageBtn"><i
+                        class="fa-regular fa-envelope sendBtnIcon"></i></button>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+<script type="module" src="./js/chat/chat.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+
+</html>

@@ -1,0 +1,79 @@
+<header>
+  <button class="navbar__burger" id="navbar-burger">
+    <ul class="navbar__burger__menu">
+      <li class="menu__item__burger"><a href="#"><i
+            class="fa-solid fa-house burger__icons"
+          ></i>Home</a></li>
+      <li class="menu__item__burger"><a href="#"><i
+            class="fa-solid fa-music burger__icons"
+          ></i>Beats</a></li>
+      {{!-- <li class="menu__item__burger"><a href="#"><i
+            class="fa-solid fa-crown burger__icons"
+          ></i>Kits</a></li> --}}
+      {{!-- <li class="menu__item__burger"><a href="#"><i
+            class="fa-solid fa-people-group burger__icons"
+          ></i>Collab</a></li> --}}
+      <li class="menu__item__burger"><a href="/chat"><i
+            class="fa-solid fa-envelope burger__icons"
+          ></i>Chat</a></li>
+    </ul>
+  </button>
+  <nav class="main__navbar">
+    <div class="navbar__container">
+      <div
+        class="burger__logo"
+        id="navbar-burger-logo"
+        onclick="burgerActivator()"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <a href="/" class="navbar__logo" id="navbar-main-logo">Raji Records</a>
+      <ul class="navbar__right__menu">
+        <div class="menu__item__hide" id="menu__item__hide">
+          <li class="menu__item__link"><a href="#">BEATS</a></li>
+          {{!-- <li class="menu__item__link"><a href="#">KITS</a></li>
+          <li class="menu__item__link"><a href="#">COLLAB</a></li>
+          <li class="menu__item__link"><a href="#">TRACKS</a></li> --}}
+          <li class="menu__item__link"><a href="/chat">CHAT</a></li>
+        </div>
+        <li class="menu__item__search" id="menu-item-search">
+          <button
+            class="search__icon"
+            id="search-icon"
+            onclick="SearchInputActive()"
+          ><i class="fa-solid fa-magnifying-glass navbar__icons"></i></button>
+          <input
+            type="text"
+            class="menu__search__input"
+            id="menu__search__input"
+            placeholder="Search Beats"
+          />
+          <button class="clear__icon" onclick="SearchInputDisable()"><i
+              class="fa-solid fa-x navbar__icons"
+            ></i></button>
+        </li>
+
+        <li class="menu__item" id="menu-shopping"><a href="#"><i
+              class="fa-solid fa-bag-shopping navbar__icons"
+              onclick="foo(event)"
+            ></i><span class="total__amount">$0.00</span></a></li>
+        <div id="userLog">
+          <li class="menu__item" id="menu-user" id="login-btn">
+            {{! LOGIN }}
+            <i class="fa-solid fa-user navbar__icons" id="login-icon"></i>
+            <a class="login__btn" href="/login" id="login-text">Log in</a>
+
+            {{! LOGOUT }}
+            <i
+              class="fa-solid fa-arrow-right-from-bracket"
+              id="logout-icon"
+            ></i>
+            <a class="login__btn" id="logout-text">Log out</a>
+
+          </li>
+        </div>
+      </ul>
+    </div>
+  </nav>
+
+</header>
