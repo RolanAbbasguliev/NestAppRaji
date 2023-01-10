@@ -1,7 +1,6 @@
 import { Module } from "@nestjs/common";
 import { ConfigModule } from "@nestjs/config";
 import { AppController } from "./app.controller";
-import { AppService } from "./app.service";
 import { TrackModule } from "./track/track.module";
 import { AuthModule } from "./auth/auth.module";
 import { PrismaModule } from "./prisma/prisma.module";
@@ -12,7 +11,7 @@ import * as path from "path";
 
 @Module({
   imports: [
-    ServeStaticModule.forRoot({ rootPath: path.resolve(__dirname, "static") }),
+    ServeStaticModule.forRoot({ rootPath: path.resolve(__dirname, "uplaoded") }),
     AuthModule,
     TrackModule,
     PrismaModule,

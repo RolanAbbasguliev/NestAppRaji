@@ -22,7 +22,7 @@ let AppModule = class AppModule {
 AppModule = __decorate([
     (0, common_1.Module)({
         imports: [
-            serve_static_1.ServeStaticModule.forRoot({ rootPath: path.resolve(__dirname, "static") }),
+            serve_static_1.ServeStaticModule.forRoot({ rootPath: path.resolve(__dirname, "uplaoded") }),
             auth_module_1.AuthModule,
             track_module_1.TrackModule,
             prisma_module_1.PrismaModule,

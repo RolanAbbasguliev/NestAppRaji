@@ -3,8 +3,7 @@ $('.slider').bxSlider({
   controls: false,
 });
 
-function burgerActivator()
-{
+function burgerActivator() {
   document.getElementById("navbar-burger").classList.toggle("burger__active");
 }
 
@@ -13,10 +12,10 @@ function burgerActivator()
 //setUp User
 localStorage.removeItem("JoinedRoomStatus");
 
-//setUp Admin 
 
 
 
- 
+
+
 
 

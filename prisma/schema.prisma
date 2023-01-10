@@ -35,8 +35,10 @@ model Track {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  name String
+  title String
   artist String
+
+  description String?
 
   audioFile String
   coverImg String

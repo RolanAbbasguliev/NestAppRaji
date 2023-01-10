@@ -1,4 +1,11 @@
+import { IsString, IsNotEmpty } from "class-validator";
+
 export class CreateTrackDto {
-    name: string;
-    artist: string;
+  @IsString()
+  @IsNotEmpty()
+  name: string;
+
+  @IsString()
+  @IsNotEmpty()
+  artist: string;
 }

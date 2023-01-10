@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+{{>head}}
+
+<body class="track__main">
+    <div class="wrapper__main">
+        <div class="dropzone__cover" id="dropzone__cover">
+            <div class="drop__icon">
+                <i class="fa-regular fa-file-image"></i>
+            </div>
+            <span class="f__line">Drag & Drop</span>
+            <span class="f__line">or <span class="browse__btn">browse</span></span>
+            <input type="file" id="inputCover" hidden></input>
+            <span class="support">Supports: JPEG, JPG, PNG</span>
+        </div>
+        
+        <div class="wrapper__track__info">
+            <input type="text" placeholder="Title" id="trackName">
+            <input type="text" placeholder="Artist" id="trackArtist">
+            <input type="file" id="inputAudio" hidden></input>
+            <button type="submit" onclick="UploadTrack()" class="upload__btn" id="upload__btn"><i class="fa-solid fa-cloud-arrow-up upload__btn__icon"></i></button>
+        </div>
+
+
+        
+    </div>
+
+</body>
+<script src="./js/main.js"></script>
+<script src="./js/buttons/Upload/UploadTrack.js"></script>
+</html>

@@ -680,6 +680,7 @@ br {
   display: none;
 }
 
+
 @media (max-width: 1150px) {
   .slide__remote {
     display: flex;

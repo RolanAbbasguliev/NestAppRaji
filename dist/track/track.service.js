@@ -22,6 +22,11 @@ let TrackService = class TrackService {
     async create(dto, coverImg, audioFile) {
         const audioPath = this.fileService.createFile(file_type_1.FileType.AUDIO, audioFile);
         const coverPath = this.fileService.createFile(file_type_1.FileType.COVER, coverImg);
+        console.log(coverImg, audioFile);
+        if (coverImg.originalname != ("jpeg" || "png" || "jpg"))
+            throw new common_1.ForbiddenException("Cover format bad");
+        if (audioFile.originalname != ("mp3" || "wav"))
+            throw new common_1.ForbiddenException("Audio format bad");
         const admin = await this.prisma.user.findUnique({
             where: {
                 email: "rajirecords@gmail.com",
@@ -30,6 +35,8 @@ let TrackService = class TrackService {
                 id: true,
             },
         });
+        if (!admin)
+            throw new common_1.ForbiddenException("user not found");
         const track = await this.prisma.track.create({
             data: {
                 name: dto.name,

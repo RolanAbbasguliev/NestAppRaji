@@ -11,4 +11,5 @@ export declare class AppController {
     getTerms(): {};
     getLogin(): {};
     chat(): {};
+    track(): {};
 }

@@ -22,7 +22,7 @@ export class TrackController {
     FileFieldsInterceptor([
       { name: "audio", maxCount: 1 },
       { name: "cover", maxCount: 1 },
-    ])
+    ])  
   )
   @HttpCode(HttpStatus.OK)
   create(@UploadedFiles() files, @Body() dto: CreateTrackDto): Promise<Track> {

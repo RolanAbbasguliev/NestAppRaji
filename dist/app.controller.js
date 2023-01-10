@@ -48,91 +48,101 @@ let AppController = class AppController {
     chat() {
         return {};
     }
+    track() {
+        return {};
+    }
 };
 __decorate([
-    (0, common_1.Get)(['/', 'index']),
-    (0, common_1.Render)('index.hbs'),
+    (0, common_1.Get)(["/", "index"]),
+    (0, common_1.Render)("index.hbs"),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", void 0)
 ], AppController.prototype, "root", null);
 __decorate([
-    (0, common_1.Get)('registration'),
-    (0, common_1.Render)('registration.hbs'),
+    (0, common_1.Get)("registration"),
+    (0, common_1.Render)("registration.hbs"),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", void 0)
 ], AppController.prototype, "getRegistration", null);
 __decorate([
-    (0, common_1.Get)('exclusive'),
-    (0, common_1.Render)('exclusiveTracks.hbs'),
+    (0, common_1.Get)("exclusive"),
+    (0, common_1.Render)("exclusiveTracks.hbs"),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", void 0)
 ], AppController.prototype, "getExclusive", null);
 __decorate([
-    (0, common_1.Get)('lease'),
-    (0, common_1.Render)('leaseTracks.hbs'),
+    (0, common_1.Get)("lease"),
+    (0, common_1.Render)("leaseTracks.hbs"),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", void 0)
 ], AppController.prototype, "getLease", null);
 __decorate([
-    (0, common_1.Get)('licensInfo'),
-    (0, common_1.Render)('licensInfoTracks.hbs'),
+    (0, common_1.Get)("licensInfo"),
+    (0, common_1.Render)("licensInfoTracks.hbs"),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", void 0)
 ], AppController.prototype, "getLicensInfo", null);
 __decorate([
-    (0, common_1.Get)('premium'),
-    (0, common_1.Render)('premiumTracks.hbs'),
+    (0, common_1.Get)("premium"),
+    (0, common_1.Render)("premiumTracks.hbs"),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", void 0)
 ], AppController.prototype, "getPremium", null);
 __decorate([
-    (0, common_1.Get)('trackout'),
-    (0, common_1.Render)('trackoutTracks.hbs'),
+    (0, common_1.Get)("trackout"),
+    (0, common_1.Render)("trackoutTracks.hbs"),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", void 0)
 ], AppController.prototype, "getTrackout", null);
 __decorate([
-    (0, common_1.Get)('unlimited'),
-    (0, common_1.Render)('unlimitedTracks.hbs'),
+    (0, common_1.Get)("unlimited"),
+    (0, common_1.Render)("unlimitedTracks.hbs"),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", void 0)
 ], AppController.prototype, "getUnlimited", null);
 __decorate([
-    (0, common_1.Get)('privacy'),
-    (0, common_1.Render)('privacyTracks.hbs'),
+    (0, common_1.Get)("privacy"),
+    (0, common_1.Render)("privacyTracks.hbs"),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", void 0)
 ], AppController.prototype, "getPrivacy", null);
 __decorate([
-    (0, common_1.Get)('terms'),
-    (0, common_1.Render)('termsTracks.hbs'),
+    (0, common_1.Get)("terms"),
+    (0, common_1.Render)("termsTracks.hbs"),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", void 0)
 ], AppController.prototype, "getTerms", null);
 __decorate([
-    (0, common_1.Get)('login'),
-    (0, common_1.Render)('login.hbs'),
+    (0, common_1.Get)("login"),
+    (0, common_1.Render)("login.hbs"),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", void 0)
 ], AppController.prototype, "getLogin", null);
 __decorate([
-    (0, common_1.Get)('chat'),
-    (0, common_1.Render)('chat.hbs'),
+    (0, common_1.Get)("chat"),
+    (0, common_1.Render)("chat.hbs"),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", void 0)
 ], AppController.prototype, "chat", null);
+__decorate([
+    (0, common_1.Get)("track"),
+    (0, common_1.Render)("track.hbs"),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", void 0)
+], AppController.prototype, "track", null);
 AppController = __decorate([
     (0, common_1.Controller)()
 ], AppController);
